@@ -1,19 +1,24 @@
 const AboutSection = ({ onBookNow }) => {
   const locations = [
     {
-      name: 'SERENOVA HAVEN',
+      name: 'SAPPHIRE BEAUTY PLANET',
+      sub: 'Ikoyi, Lagos',
+      addr: 'No 17B Cooper Road Ikoyi ',
+    },
+    {
+      name: 'SAPPHIRE BEAUTY PLANET',
+      sub: 'Lekki, Lagos',
+      addr: 'No 34 Jay Jay Oladimeji Close, Off Freedom Way Lekki 1 ',
+    },
+    {
+      name: 'SAPPHIRE BEAUTY PLANET',
+      sub: 'Lekki, Lagos',
+      addr: 'Plot 26B Oladimeji Alo Street, Off Freedom Way Lekki 1 ',
+    },
+        {
+      name: 'SAPPHIRE BEAUTY PLANET',
       sub: 'Victoria Island, Lagos',
-      addr: '14 Adeola Odeku Street, VI',
-    },
-    {
-      name: 'SERENOVA OASIS',
-      sub: 'Lekki Phase 1, Lagos',
-      addr: '7 Admiralty Way, Lekki',
-    },
-    {
-      name: 'SERENOVA RETREAT',
-      sub: 'Ikeja GRA, Lagos',
-      addr: '21 Mobolaji Bank Anthony Way',
+      addr: '11B Taslim Elias Close , Victoria Island',
     },
   ];
 
@@ -218,7 +223,7 @@ const AboutSection = ({ onBookNow }) => {
               Hey, You're <em>Home.</em>
             </h2>
             <p className="about-desc">
-              At Serenova Spa, we're cultivating a sanctuary where every guest experiences the finest in holistic wellness and beauty. This is where you restore, where you belong, and where everything your body and soul needs is nurtured into radiant wellbeing.
+              At Sapphire Beauty Planet, we're cultivating a sanctuary where every guest experiences the finest in holistic wellness and beauty. This is where you restore, where you belong, and where everything your body and soul needs is nurtured into radiant wellbeing.
             </p>
 
             <div className="about-locations">

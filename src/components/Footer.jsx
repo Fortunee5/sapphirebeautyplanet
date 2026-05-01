@@ -4,7 +4,7 @@ const Footer = ({ onAdminClick }) => {
   const links = {
     'Spa Services': ['Full Body Massage', 'Luxury Facials', 'Hot Stone Therapy', 'Manicure & Pedicure', 'Aromatherapy Bath', 'Body Scrub & Wrap'],
     'Company': ['About Us', 'Our Story', 'Careers', 'Press & Media', 'Partnerships'],
-    'Visit Us': ['Victoria Island', 'Lekki Phase 1', 'Ikeja GRA', 'Opening Hours', 'Parking Info'],
+    'Visit Us': ['No 17B Cooper Road Ikoyi ', 'No 34 Jay Jay Oladimeji Close, Off Freedom Way Lekki 1', 'Plot 26B Oladimeji Alo Street, Off Freedom Way Lekki 1', '11B Taslim Elias Close , Victoria Island'],
   };
 
   return (
@@ -227,12 +227,10 @@ const Footer = ({ onAdminClick }) => {
                 Lagos' premier luxury wellness destination. Where every treatment is a journey into serenity, every visit a step towards your most radiant self.
               </p>
               <div className="footer-socials">
-                <a href="#" title="Instagram"> <FaInstagram /></a>
-                <a href="#" title="Facebook">  <FaFacebook /></a>
-                <a href="#" title="Twitter/X"> <FaXTwitter /></a>
-                <a href="https://wa.me/2348144311841"
+                <a href="https://www.instagram.com/sapphirebeautyplanet?igsh=bXBub3Z2NHprZnI5&utm_source=qr" title="Instagram"> <FaInstagram /></a>
+                <a href="https://wa.me/2348038794733"
                 title="WhatsApp" target="_blank"> <FaWhatsapp /></a>
-                <a href="#" title="TikTok">    <FaTiktok /></a>
+                <a href="https://www.tiktok.com/@sapphireplanet1?_r=1&_t=ZS-95xvboioj6w" title="TikTok">    <FaTiktok /></a>
               </div>
             </div>
 
@@ -265,7 +263,7 @@ const Footer = ({ onAdminClick }) => {
 
       <a
         className="wa-float"
-        href="https://wa.me/2348144311841"
+        href="https://wa.me/2348038794733"
         target="_blank"
         rel="noreferrer"
         title="Chat on WhatsApp"

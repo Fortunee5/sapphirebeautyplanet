@@ -290,7 +290,7 @@ const HeroSection = ({ onBookNow }) => {
             Serenity
           </h1>
           <p className="hero-desc">
-            At Serenova Spa, you'll rediscover your inner calm and be rejuvenated to embrace life with renewed energy and radiance.
+            At Sapphire Beauty Planet, you'll rediscover your inner calm and be rejuvenated to embrace life with renewed energy and radiance.
           </p>
           <div className="hero-cta-group">
             <button className="hero-btn-primary" onClick={onBookNow}>Book a Session</button>

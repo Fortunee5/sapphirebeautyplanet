@@ -247,7 +247,7 @@ const DailyRitualSection = ({ onBookNow }) => {
           <div className="ritual-visual">
             <div className="ritual-card-main">
               <div className="ritual-quote">
-                Your body is your greatest asset. At Serenova, we help you honour and restore it every single day.
+                Your body is your greatest asset. At Sapphire Beauty Planet, we help you honour and restore it every single day.
               </div>
               <div className="ritual-author">
                 <div className="author-avatar">🌿</div>

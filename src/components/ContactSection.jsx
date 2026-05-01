@@ -217,13 +217,16 @@ const ContactSection = ({ onBookNow }) => {
             </p>
 
             <div className="contact-info-list">
-              <div className="contact-info-item">
-                <div className="contact-info-icon">📍</div>
-                <div className="contact-info-text">
-                  <strong>Our Locations</strong>
-                  Victoria Island, Lekki & Ikeja GRA, Lagos
-                </div>
-              </div>
+<div className="contact-info-item">
+  <div className="contact-info-icon">📍</div>
+  <div className="contact-info-text">
+    <strong>Our Locations</strong>
+    No 17B Cooper Road Ikoyi,<br />
+    No 34 Jay Jay Oladimeji Close Off Freedom Way Lekki 1,<br />
+    Plot 26B Oladimeji Alo Street, Off Freedom Way Lekki 1,<br />
+    11B Taslim Elias Close Victoria Island,
+  </div>
+</div>
               <div className="contact-info-item">
                 <div className="contact-info-icon">📞</div>
                 <div className="contact-info-text">

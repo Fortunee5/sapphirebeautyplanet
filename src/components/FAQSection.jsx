@@ -2,12 +2,12 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    q: 'What is Serenova Spa?',
-    a: 'Serenova Spa is a premier luxury wellness and beauty spa offering a full range of holistic treatments — from therapeutic massages and luxury facials to body wraps and nail care. We are committed to your total wellbeing, beauty, and relaxation.',
+    q: 'What is Sapphire Beauty Planet?',
+    a: 'Sapphire Beauty Planet is a premier luxury wellness and beauty spa offering a full range of holistic treatments — from therapeutic massages and luxury facials to body wraps and nail care. We are committed to your total wellbeing, beauty, and relaxation.',
   },
   {
-    q: 'Who is Serenova Spa for?',
-    a: 'Everyone is welcome at Serenova! Whether you are treating yourself to some well-deserved self-care, preparing for a special occasion, recovering from stress and burnout, or simply looking to maintain a consistent wellness routine, we have a treatment for you.',
+    q: 'Who is Sapphire Beauty Planet for?',
+    a: 'Everyone is welcome at Sapphire Beauty Planet! Whether you are treating yourself to some well-deserved self-care, preparing for a special occasion, recovering from stress and burnout, or simply looking to maintain a consistent wellness routine, we have a treatment for you.',
   },
   {
     q: 'What can I expect during my first visit?',
@@ -35,11 +35,11 @@ const faqs = [
   },
   {
     q: 'Is there a loyalty or membership programme?',
-    a: 'Yes! Our Serenova Wellness Membership gives you discounted rates, priority booking, monthly treatment credits, and exclusive member-only offers. Ask our front desk team about joining on your next visit.',
+    a: 'Yes! Our Sapphire Beauty Planet Wellness Membership gives you discounted rates, priority booking, monthly treatment credits, and exclusive member-only offers. Ask our front desk team about joining on your next visit.',
   },
   {
     q: 'How do I stay updated on new services and promotions?',
-    a: 'Follow us on Instagram @seronovaspa, join our WhatsApp community via the number on our contact page, and subscribe to our newsletter for weekly wellness tips, new service launches, and exclusive seasonal promotions.',
+    a: 'Follow us on Instagram @sapphirebeautyplanet, join our WhatsApp community via the number on our contact page, and subscribe to our newsletter for weekly wellness tips, new service launches, and exclusive seasonal promotions.',
   },
 ];
 
@@ -195,7 +195,7 @@ const FAQSection = () => {
             <div className="section-tag">FAQ</div>
             <h2 className="section-title">Frequently Asked Questions</h2>
             <p style={{ color: 'var(--text-light)', fontSize: '15px', lineHeight: '1.7' }}>
-              Everything you need to know about visiting Serenova Spa
+              Everything you need to know about visiting Sapphire Beauty Planet
             </p>
           </div>
 

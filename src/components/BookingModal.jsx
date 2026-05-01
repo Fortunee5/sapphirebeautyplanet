@@ -1,15 +1,36 @@
 import { useState, useEffect } from 'react';
 
 const serviceOptions = [
-  'Full Body Massage (60 min) – ₦18,000',
-  'Full Body Massage (90 min) – ₦22,000',
-  'Luxury Facial (45 min) – ₦15,000',
-  'Luxury Facial (60 min) – ₦18,000',
-  'Hot Stone Therapy (75 min) – ₦22,000',
-  'Manicure & Pedicure (60 min) – ₦12,000',
-  'Aromatherapy Bath (45 min) – ₦14,000',
-  'Body Scrub & Wrap (90 min) – ₦20,000',
-  'Full Glow Package (3 hrs) – ₦45,000',
+  'Full Body Sweedish Massage (60 mins) – ₦45,000, (90 mins) – ₦50,000',
+  'Aromatherapy Massage (60 mins) – ₦45,000, (90 mins) – ₦50,000',
+  'Deep Tissue Massage  (60 mins) – ₦50,000, (90 mins) –  ₦60,000',
+  'Four Hands Massage   (60 mins) – ₦55,000, (90 mins) – ₦60,000',
+  'Men\'s Signature Facial  (60 mins) – ₦35,000, (90 mins) – ₦38,000',
+  'Women\'s Deluxe Facial  (60 mins) – ₦34,000',
+  'Hot Stone Massage  (60 mins) – ₦45,000, (90 mins) – ₦50,000',
+  'Lomi Lomi Massage  (60 mins) – ₦70,000',
+  'Neck Massage  (60 mins) – ₦30,000',
+  'Manicure & Pedicure – ₦31,000',
+  'Icing Facials – ₦55,000',
+  'Rejuvenating Facials – ₦45,000',
+  'Back Cleansing Facials – ₦40,000',
+  'Renew Facials – ₦60,000',
+  'Vaginal Facials(VFACIAL) – ₦40,000',
+  'Deep Cleansing Facial – ₦45,000',
+  'Gentle Men Facial – ₦35,000',
+  'Brows – ₦27,000',
+  'Lip – ₦23,000',
+  'Face – ₦32,000',
+  'Back – ₦40,000',
+  'Legs(Both)(Half/Full) – ₦45,000',
+  'Arms(Half/Full) – ₦40,000',
+  'Feet (Both) – ₦30,000',
+  'Underarm (Both) – ₦28,000',
+  'Bikini – ₦40,000',
+  'Classic Pedicure – ₦45,000',
+  'Spa Pedicure – ₦30,000',
+  'Signature Pedicure – ₦40,000',
+  'Pedicure & Manicure – ₦38,000',
 ];
 
 const BookingModal = ({ isOpen, onClose, onSubmit }) => {
@@ -82,7 +103,7 @@ const BookingModal = ({ isOpen, onClose, onSubmit }) => {
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
 
     // Send to WhatsApp
-    const msg = `🌿 *NEW SPA BOOKING – Serenova Spa*\n\n` +
+    const msg = `🌿 *NEW SPA BOOKING – Sapphire Beauty Planet*\n\n` +
       `👤 *Name:* ${form.fullName}\n` +
       `📞 *Phone:* ${form.phone}\n` +
       `📍 *Address:* ${form.address}\n` +
@@ -91,7 +112,7 @@ const BookingModal = ({ isOpen, onClose, onSubmit }) => {
       `🕐 *Time:* ${form.time}\n` +
       `📝 *Notes:* ${form.notes || 'None'}`;
 
-    const waUrl = `https://wa.me/2348144311841?text=${encodeURIComponent(msg)}`;
+    const waUrl = `https://wa.me/2348038794733?text=${encodeURIComponent(msg)}`;
 
     // Save to admin
     onSubmit({ ...form, timestamp: new Date().toISOString() });
@@ -433,7 +454,7 @@ const BookingModal = ({ isOpen, onClose, onSubmit }) => {
             <>
               <div className="modal-header">
                 <button className="modal-close" onClick={handleClose}>✕</button>
-                <div className="modal-header-badge">🌿 Serenova Spa</div>
+                <div className="modal-header-badge">🌿 Sapphire Beauty Planet</div>
                 <div className="modal-title">Book a Session</div>
                 <div className="modal-subtitle">
                   {step === 1 ? 'Tell us about yourself' : 'Choose your treatment'}
