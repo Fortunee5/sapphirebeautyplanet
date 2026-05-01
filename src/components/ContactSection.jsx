@@ -231,7 +231,7 @@ const ContactSection = ({ onBookNow }) => {
                 <div className="contact-info-icon">📞</div>
                 <div className="contact-info-text">
                   <strong>Call / WhatsApp</strong>
-                  +234 814 431 1841
+                  08038794733
                 </div>
               </div>
               <div className="contact-info-item">
