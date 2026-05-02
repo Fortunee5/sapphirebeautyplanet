@@ -52,16 +52,16 @@ const Navbar = ({ onBookNow }) => {
         .nav-logo {
           display: flex;
           align-items: center;
+          gap: clamp(6px, 1.5vw, 12px);
           text-decoration: none;
           flex-shrink: 0;
         }
         .nav-logo-img {
-          /* clamp: 44px on tiny phones → 8vw fluid → 72px max on desktop */
-          height: clamp(44px, 8vw, 72px);
+          height: clamp(38px, 6vw, 64px);
           width: auto;
           object-fit: contain;
           display: block;
-          /* slight drop-shadow so it pops on both dark & light navbars */
+          flex-shrink: 0;
           filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25));
           transition: filter 0.3s ease, transform 0.3s ease;
         }
@@ -69,10 +69,42 @@ const Navbar = ({ onBookNow }) => {
           transform: scale(1.04);
           filter: drop-shadow(0 4px 12px rgba(0,0,0,0.35));
         }
-        /* On scrolled (white bg) the dark circular logo looks great as-is.
-           On transparent (dark hero) we add a subtle glow to help it stand out. */
         .navbar:not(.scrolled) .nav-logo-img {
           filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+        }
+        .nav-logo-text {
+          display: flex;
+          flex-direction: column;
+          line-height: 1.15;
+        }
+        .nav-logo-title {
+          font-family: 'Playfair Display', serif;
+          font-size: clamp(13px, 2vw, 20px);
+          font-weight: 700;
+          color: var(--green-dark);
+          letter-spacing: 0.4px;
+          white-space: nowrap;
+          transition: color 0.3s;
+        }
+        .nav-logo-sub {
+          font-family: 'Playfair Display', serif;
+          font-size: clamp(8px, 1vw, 11px);
+          font-weight: 400;
+          color: var(--green-dark);
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          opacity: 0.7;
+          white-space: nowrap;
+          transition: color 0.3s;
+        }
+        .navbar:not(.scrolled) .nav-logo-title,
+        .navbar:not(.scrolled) .nav-logo-sub {
+          color: #fff;
+        }
+        /* Hide subtitle on very small screens to save space */
+        @media (max-width: 400px) {
+          .nav-logo-sub { display: none; }
+          .nav-logo-title { font-size: 12px; }
         }
 
         /* ── Nav links ── */
@@ -230,6 +262,10 @@ const Navbar = ({ onBookNow }) => {
               alt="Sapphire Spa Therapy & Unisex Salon"
               className="nav-logo-img"
             />
+            <div className="nav-logo-text">
+              <span className="nav-logo-title">Sapphire Beauty Planet</span>
+              <span className="nav-logo-sub">Spa & Unisex Salon</span>
+            </div>
           </a>
 
           {/* ── Desktop links ── */}
