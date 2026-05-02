@@ -220,7 +220,6 @@ const Footer = ({ onAdminClick }) => {
           <div className="footer-top">
             <div className="footer-brand">
               <div className="footer-logo">
-                <div className="footer-logo-icon">🌿</div>
                 Sapphire Beauty Planet
               </div>
               <p className="footer-brand-desc">

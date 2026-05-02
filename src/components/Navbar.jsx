@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import sapphireLogo from './assets/sapphire-logo.png'; // 👈 update path to match your project
 
 const Navbar = ({ onBookNow }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -46,31 +47,35 @@ const Navbar = ({ onBookNow }) => {
           align-items: center;
           justify-content: space-between;
         }
+
+        /* ── Logo ── */
         .nav-logo {
           display: flex;
           align-items: center;
-          gap: 10px;
-          font-family: 'Playfair Display', serif;
-          font-size: 22px;
-          font-weight: 700;
-          color: var(--green-dark);
-          letter-spacing: 0.5px;
-        }
-        .navbar:not(.scrolled) .nav-logo { color: #fff; }
-        .logo-icon {
-          width: 40px;
-          height: 40px;
-          background: var(--green-dark);
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 18px;
+          text-decoration: none;
           flex-shrink: 0;
         }
-        .navbar:not(.scrolled) .logo-icon {
-          background: rgba(255,255,255,0.2);
+        .nav-logo-img {
+          /* clamp: 44px on tiny phones → 8vw fluid → 72px max on desktop */
+          height: clamp(44px, 8vw, 72px);
+          width: auto;
+          object-fit: contain;
+          display: block;
+          /* slight drop-shadow so it pops on both dark & light navbars */
+          filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25));
+          transition: filter 0.3s ease, transform 0.3s ease;
         }
+        .nav-logo:hover .nav-logo-img {
+          transform: scale(1.04);
+          filter: drop-shadow(0 4px 12px rgba(0,0,0,0.35));
+        }
+        /* On scrolled (white bg) the dark circular logo looks great as-is.
+           On transparent (dark hero) we add a subtle glow to help it stand out. */
+        .navbar:not(.scrolled) .nav-logo-img {
+          filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+        }
+
+        /* ── Nav links ── */
         .nav-links {
           display: flex;
           align-items: center;
@@ -99,6 +104,8 @@ const Navbar = ({ onBookNow }) => {
         .navbar:not(.scrolled) .nav-links a { color: rgba(255,255,255,0.9); }
         .navbar:not(.scrolled) .nav-links a:hover { color: #fff; }
         .navbar:not(.scrolled) .nav-links a::after { background: #fff; }
+
+        /* ── Book Now button ── */
         .nav-book-btn {
           background: var(--green-dark);
           color: #fff !important;
@@ -125,6 +132,8 @@ const Navbar = ({ onBookNow }) => {
         .navbar:not(.scrolled) .nav-book-btn:hover {
           background: rgba(255,255,255,0.35);
         }
+
+        /* ── Hamburger ── */
         .hamburger {
           display: none;
           flex-direction: column;
@@ -145,6 +154,7 @@ const Navbar = ({ onBookNow }) => {
         .hamburger.open span:nth-child(2) { opacity: 0; }
         .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+        /* ── Mobile menu ── */
         .mobile-menu {
           display: none;
           position: fixed;
@@ -162,6 +172,16 @@ const Navbar = ({ onBookNow }) => {
           transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
         }
         .mobile-menu.open { transform: translateX(0); }
+
+        /* Logo inside mobile menu */
+        .mobile-menu-logo {
+          height: clamp(64px, 20vw, 90px);
+          width: auto;
+          object-fit: contain;
+          margin-bottom: 8px;
+          filter: drop-shadow(0 2px 10px rgba(0,0,0,0.4));
+        }
+
         .mobile-menu a {
           font-family: 'Playfair Display', serif;
           font-size: 28px;
@@ -202,11 +222,17 @@ const Navbar = ({ onBookNow }) => {
 
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-inner">
-          <div className="nav-logo">
-            <div className="logo-icon">🌿</div>
-            Sapphire Beauty Planet
-          </div>
 
+          {/* ── Logo ── */}
+          <a href="#home" className="nav-logo">
+            <img
+              src={sapphireLogo}
+              alt="Sapphire Spa Therapy & Unisex Salon"
+              className="nav-logo-img"
+            />
+          </a>
+
+          {/* ── Desktop links ── */}
           <div className="nav-links">
             {navLinks.map(link => (
               <a key={link.href} href={link.href}>{link.label}</a>
@@ -214,6 +240,7 @@ const Navbar = ({ onBookNow }) => {
             <button className="nav-book-btn" onClick={onBookNow}>Book Now</button>
           </div>
 
+          {/* ── Hamburger ── */}
           <div
             className={`hamburger ${menuOpen ? 'open' : ''}`}
             onClick={() => setMenuOpen(!menuOpen)}
@@ -223,8 +250,17 @@ const Navbar = ({ onBookNow }) => {
         </div>
       </nav>
 
+      {/* ── Mobile menu ── */}
       <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
         <button className="mobile-close" onClick={() => setMenuOpen(false)}>✕</button>
+
+        {/* Logo shown at top of mobile menu */}
+        <img
+          src={sapphireLogo}
+          alt="Sapphire Spa Therapy & Unisex Salon"
+          className="mobile-menu-logo"
+        />
+
         {navLinks.map(link => (
           <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>
             {link.label}
