@@ -93,14 +93,14 @@ const FAQSection = () => {
 
         .faq-item {
           background: #fff;
-          border: 1px solid var(--green-pale);
+          border: 1px solid #e8e4f8;
           border-radius: 14px;
           overflow: hidden;
           transition: border-color 0.3s, box-shadow 0.3s;
         }
         .faq-item.open {
-          border-color: var(--green-light);
-          box-shadow: 0 4px 20px rgba(26,74,46,0.08);
+          border-color: #9b84d8;
+          box-shadow: 0 4px 20px rgba(30, 18, 74, 0.08);
         }
         .faq-question {
           width: 100%;
@@ -120,24 +120,24 @@ const FAQSection = () => {
           line-height: 1.4;
         }
         .faq-item.open .faq-question {
-          color: var(--green-dark);
+          color: #1e124a;
         }
         .faq-icon {
           flex-shrink: 0;
           width: 28px;
           height: 28px;
-          background: var(--green-pale);
+          background: #e8e4f8;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           font-size: 18px;
           font-weight: 400;
-          color: var(--green-accent);
+          color: #4b2dab;
           transition: background 0.3s, color 0.3s;
         }
         .faq-item.open .faq-icon {
-          background: var(--green-dark);
+          background: #1e124a;
           color: #fff;
         }
         .faq-answer-wrap {
@@ -164,7 +164,7 @@ const FAQSection = () => {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          background: var(--green-dark);
+          background: #1e124a;
           color: #fff;
           padding: 14px 32px;
           border-radius: 40px;
@@ -173,11 +173,11 @@ const FAQSection = () => {
           border: none;
           cursor: pointer;
           transition: all 0.3s;
-          box-shadow: 0 6px 20px rgba(26,74,46,0.2);
+          box-shadow: 0 6px 20px rgba(30, 18, 74, 0.2);
           text-decoration: none;
         }
         .faq-contact-btn:hover {
-          background: var(--green-accent);
+          background: #4b2dab;
           transform: translateY(-2px);
         }
 

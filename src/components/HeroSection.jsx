@@ -23,7 +23,7 @@ const HeroSection = ({ onBookNow }) => {
           display: grid;
           grid-template-columns: 1fr 1fr;
           overflow: hidden;
-          background: var(--green-dark);
+          background: #1e124a;
         }
 
         /* Left: Collage */
@@ -41,7 +41,7 @@ const HeroSection = ({ onBookNow }) => {
           background: linear-gradient(
             to right,
             transparent 60%,
-            var(--green-dark) 100%
+            #1e124a 100%
           );
           z-index: 2;
           pointer-events: none;
@@ -150,8 +150,8 @@ const HeroSection = ({ onBookNow }) => {
           flex-wrap: wrap;
         }
         .hero-btn-primary {
-          background: var(--green-light);
-          color: var(--green-dark);
+          background: #9b84d8;
+          color: #1e124a;
           padding: 16px 36px;
           border-radius: 40px;
           font-size: 15px;
@@ -160,12 +160,12 @@ const HeroSection = ({ onBookNow }) => {
           border: none;
           cursor: pointer;
           transition: all 0.3s ease;
-          box-shadow: 0 8px 25px rgba(82,183,136,0.4);
+          box-shadow: 0 8px 25px rgba(75, 45, 171, 0.4);
         }
         .hero-btn-primary:hover {
           background: #fff;
           transform: translateY(-2px);
-          box-shadow: 0 12px 35px rgba(82,183,136,0.5);
+          box-shadow: 0 12px 35px rgba(75, 45, 171, 0.5);
         }
         .hero-btn-secondary {
           background: transparent;
@@ -237,7 +237,7 @@ const HeroSection = ({ onBookNow }) => {
             height: 50vh;
           }
           .hero-collage::after {
-            background: linear-gradient(to bottom, transparent 60%, var(--green-dark) 100%);
+            background: linear-gradient(to bottom, transparent 60%, #1e124a 100%);
           }
           .hero-text-side {
             padding: 40px 24px 60px;
@@ -282,7 +282,7 @@ const HeroSection = ({ onBookNow }) => {
         {/* Right text */}
         <div className="hero-text-side">
           <div className="hero-badge">
-            <span>🌿</span> Premium Spa & Wellness
+            Premium Spa & Wellness
           </div>
           <h1 className="hero-title">
             Welcome To The<br />

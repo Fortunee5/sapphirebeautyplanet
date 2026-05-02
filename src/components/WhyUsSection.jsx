@@ -46,7 +46,7 @@ const WhyUsSection = () => {
         }
         .why-card {
           background: var(--off-white);
-          border: 1px solid var(--green-pale);
+          border: 1px solid #e8e4f8;
           border-radius: 20px;
           padding: 36px 28px;
           transition: all 0.4s ease;
@@ -58,14 +58,14 @@ const WhyUsSection = () => {
           position: absolute;
           top: 0; left: 0; right: 0;
           height: 4px;
-          background: linear-gradient(90deg, var(--green-light), var(--green-dark));
+          background: linear-gradient(90deg, #9b84d8, #1e124a);
           transform: scaleX(0);
           transition: transform 0.4s ease;
           transform-origin: left;
         }
         .why-card:hover {
-          border-color: var(--green-light);
-          box-shadow: 0 16px 50px rgba(26,74,46,0.1);
+          border-color: #9b84d8;
+          box-shadow: 0 16px 50px rgba(30, 18, 74, 0.1);
           transform: translateY(-6px);
           background: #fff;
         }
@@ -73,7 +73,7 @@ const WhyUsSection = () => {
         .why-icon {
           width: 60px;
           height: 60px;
-          background: var(--green-pale);
+          background: #e8e4f8;
           border-radius: 14px;
           display: flex;
           align-items: center;
@@ -83,7 +83,7 @@ const WhyUsSection = () => {
           transition: background 0.3s;
         }
         .why-card:hover .why-icon {
-          background: var(--green-dark);
+          background: #1e124a;
         }
         .why-card-title {
           font-family: 'Playfair Display', serif;

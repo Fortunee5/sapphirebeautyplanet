@@ -52,7 +52,7 @@ const TestimonialsSection = () => {
     <>
       <style>{`
         .testimonials-section {
-          background: var(--green-dark);
+          background: #1e124a;
           padding: 100px 0;
           position: relative;
           overflow: hidden;

@@ -54,7 +54,7 @@ const ServicesSection = ({ onBookNow }) => {
     <>
       <style>{`
         .services-section {
-          background: var(--green-dark);
+          background: #1e124a;
           padding: 100px 0;
           position: relative;
           overflow: hidden;
@@ -64,7 +64,7 @@ const ServicesSection = ({ onBookNow }) => {
           position: absolute;
           top: -100px; right: -100px;
           width: 400px; height: 400px;
-          background: radial-gradient(circle, rgba(82,183,136,0.15) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(75, 45, 171, 0.2) 0%, transparent 70%);
           pointer-events: none;
         }
         .services-section::after {
@@ -109,21 +109,21 @@ const ServicesSection = ({ onBookNow }) => {
         }
         .service-card:hover {
           background: rgba(255,255,255,0.1);
-          border-color: rgba(82,183,136,0.5);
+          border-color: rgba(155, 132, 216, 0.5);
           transform: translateY(-8px);
           box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
         .service-tag {
           position: absolute;
           top: 20px; right: 20px;
-          background: rgba(82,183,136,0.2);
-          color: var(--green-light);
+          background: rgba(75, 45, 171, 0.25);
+          color: #9b84d8;
           font-size: 11px;
           font-weight: 600;
           letter-spacing: 0.5px;
           padding: 4px 12px;
           border-radius: 20px;
-          border: 1px solid rgba(82,183,136,0.3);
+          border: 1px solid rgba(155, 132, 216, 0.35);
         }
         .service-icon {
           font-size: 40px;
@@ -165,8 +165,8 @@ const ServicesSection = ({ onBookNow }) => {
         .services-book-btn {
           display: block;
           margin: 48px auto 0;
-          background: var(--green-light);
-          color: var(--green-dark);
+          background: #9b84d8;
+          color: #1e124a;
           padding: 16px 40px;
           border-radius: 40px;
           font-size: 15px;
@@ -174,12 +174,12 @@ const ServicesSection = ({ onBookNow }) => {
           border: none;
           cursor: pointer;
           transition: all 0.3s ease;
-          box-shadow: 0 8px 25px rgba(82,183,136,0.3);
+          box-shadow: 0 8px 25px rgba(75, 45, 171, 0.3);
         }
         .services-book-btn:hover {
           background: #fff;
           transform: translateY(-2px);
-          box-shadow: 0 12px 35px rgba(82,183,136,0.4);
+          box-shadow: 0 12px 35px rgba(75, 45, 171, 0.4);
         }
 
         @media (max-width: 1024px) {

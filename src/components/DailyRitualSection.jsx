@@ -16,8 +16,8 @@ const DailyRitualSection = ({ onBookNow }) => {
           align-items: center;
         }
         .ritual-text {}
-        .ritual-text .section-tag { color: var(--green-accent); }
-        .ritual-text .section-tag::before { background: var(--green-accent); }
+        .ritual-text .section-tag { color: #4b2dab; }
+        .ritual-text .section-tag::before { background: #4b2dab; }
 
         .ritual-title {
           font-family: 'Playfair Display', serif;
@@ -28,7 +28,7 @@ const DailyRitualSection = ({ onBookNow }) => {
           margin-bottom: 20px;
         }
         .ritual-title span {
-          color: var(--green-accent);
+          color: #4b2dab;
           font-style: italic;
         }
         .ritual-desc {
@@ -48,7 +48,7 @@ const DailyRitualSection = ({ onBookNow }) => {
           align-items: flex-start;
           gap: 14px;
           background: #fff;
-          border: 1px solid var(--green-pale);
+          border: 1px solid #e8e4f8;
           border-radius: 12px;
           padding: 16px 18px;
         }
@@ -72,7 +72,7 @@ const DailyRitualSection = ({ onBookNow }) => {
           display: inline-flex;
           align-items: center;
           gap: 10px;
-          background: var(--green-dark);
+          background: #1e124a;
           color: #fff;
           padding: 16px 36px;
           border-radius: 40px;
@@ -81,10 +81,10 @@ const DailyRitualSection = ({ onBookNow }) => {
           border: none;
           cursor: pointer;
           transition: all 0.3s;
-          box-shadow: 0 8px 25px rgba(26,74,46,0.25);
+          box-shadow: 0 8px 25px rgba(30, 18, 74, 0.25);
         }
         .ritual-btn:hover {
-          background: var(--green-accent);
+          background: #4b2dab;
           transform: translateY(-2px);
         }
 
@@ -92,20 +92,20 @@ const DailyRitualSection = ({ onBookNow }) => {
           position: relative;
         }
         .ritual-card-main {
-          background: var(--green-dark);
+          background: #1e124a;
           border-radius: 24px;
           padding: 40px;
           color: #fff;
           position: relative;
           overflow: hidden;
-          box-shadow: 0 30px 80px rgba(26,74,46,0.25);
+          box-shadow: 0 30px 80px rgba(30, 18, 74, 0.25);
         }
         .ritual-card-main::before {
           content: '';
           position: absolute;
           top: -60px; right: -60px;
           width: 200px; height: 200px;
-          background: radial-gradient(circle, rgba(82,183,136,0.25) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(75, 45, 171, 0.3) 0%, transparent 70%);
         }
         .ritual-card-main::after {
           content: '';
@@ -170,15 +170,15 @@ const DailyRitualSection = ({ onBookNow }) => {
         }
         .ritual-mini-card {
           background: #fff;
-          border: 1px solid var(--green-pale);
+          border: 1px solid #e8e4f8;
           border-radius: 14px;
           padding: 20px;
           text-align: center;
           transition: all 0.3s;
         }
         .ritual-mini-card:hover {
-          border-color: var(--green-light);
-          box-shadow: 0 6px 20px rgba(26,74,46,0.1);
+          border-color: #9b84d8;
+          box-shadow: 0 6px 20px rgba(30, 18, 74, 0.1);
           transform: translateY(-3px);
         }
         .mini-card-icon { font-size: 28px; margin-bottom: 8px; }

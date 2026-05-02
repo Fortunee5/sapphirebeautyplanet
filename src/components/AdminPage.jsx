@@ -42,7 +42,8 @@ const AdminPage = ({ bookings, onBack }) => {
         <style>{`
           .admin-login-page {
             min-height: 100vh;
-            background: var(--green-dark);
+            background: #0f0c29;
+            background: linear-gradient(to bottom, #24243e, #1a1a2e, #0f0c29);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -55,7 +56,7 @@ const AdminPage = ({ bookings, onBack }) => {
             position: absolute;
             top: -100px; left: -100px;
             width: 500px; height: 500px;
-            background: radial-gradient(circle, rgba(82,183,136,0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(123, 44, 191, 0.2) 0%, transparent 70%);
             pointer-events: none;
           }
           .admin-login-page::after {
@@ -63,18 +64,18 @@ const AdminPage = ({ bookings, onBack }) => {
             position: absolute;
             bottom: -80px; right: -80px;
             width: 400px; height: 400px;
-            background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(63, 55, 201, 0.1) 0%, transparent 70%);
             pointer-events: none;
           }
           .admin-login-card {
-            background: rgba(255,255,255,0.05);
+            background: rgba(255,255,255,0.03);
             border: 1px solid rgba(255,255,255,0.1);
             border-radius: 24px;
             padding: 48px 44px;
             width: 100%;
             max-width: 440px;
-            backdrop-filter: blur(12px);
-            box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 40px 80px rgba(0,0,0,0.5);
             position: relative;
             z-index: 1;
           }
@@ -84,12 +85,13 @@ const AdminPage = ({ bookings, onBack }) => {
           }
           .admin-login-logo-icon {
             width: 70px; height: 70px;
-            background: rgba(255,255,255,0.1);
+            background: linear-gradient(135deg, #7b2cbf, #3f37c9);
             border-radius: 20px;
             display: flex; align-items: center; justify-content: center;
             font-size: 36px;
             margin: 0 auto 16px;
-            border: 1px solid rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
           }
           .admin-login-brand {
             font-family: 'Playfair Display', serif;
@@ -99,7 +101,7 @@ const AdminPage = ({ bookings, onBack }) => {
           }
           .admin-login-subbrand {
             font-size: 12px;
-            color: var(--gold-light);
+            color: #b392f0;
             letter-spacing: 2px;
             text-transform: uppercase;
             margin-top: 4px;
@@ -147,12 +149,13 @@ const AdminPage = ({ bookings, onBack }) => {
             font-family: 'Inter', sans-serif;
             outline: none;
             width: 100%;
-            transition: border-color 0.3s, background 0.3s;
+            transition: all 0.3s;
           }
           .admin-form-group input::placeholder { color: rgba(255,255,255,0.25); }
           .admin-form-group input:focus {
-            border-color: var(--green-light);
+            border-color: #9d4edd;
             background: rgba(255,255,255,0.1);
+            box-shadow: 0 0 0 4px rgba(157, 78, 221, 0.15);
           }
           .show-pass-btn {
             position: absolute;
@@ -165,7 +168,7 @@ const AdminPage = ({ bookings, onBack }) => {
             cursor: pointer;
             transition: color 0.2s;
           }
-          .show-pass-btn:hover { color: rgba(255,255,255,0.8); }
+          .show-pass-btn:hover { color: #fff; }
           .admin-login-error {
             background: rgba(229,62,62,0.15);
             border: 1px solid rgba(229,62,62,0.3);
@@ -177,8 +180,8 @@ const AdminPage = ({ bookings, onBack }) => {
           }
           .admin-login-btn {
             width: 100%;
-            background: var(--green-light);
-            color: var(--green-dark);
+            background: #7b2cbf;
+            color: #fff;
             padding: 15px;
             border-radius: 12px;
             font-size: 15px;
@@ -187,10 +190,12 @@ const AdminPage = ({ bookings, onBack }) => {
             cursor: pointer;
             transition: all 0.3s;
             margin-top: 4px;
+            box-shadow: 0 4px 15px rgba(123, 44, 191, 0.3);
           }
           .admin-login-btn:hover {
-            background: #fff;
+            background: #9d4edd;
             transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(123, 44, 191, 0.4);
           }
           .admin-back-link {
             text-align: center;
@@ -204,14 +209,14 @@ const AdminPage = ({ bookings, onBack }) => {
             cursor: pointer;
             transition: color 0.2s;
           }
-          .admin-back-link button:hover { color: rgba(255,255,255,0.7); }
+          .admin-back-link button:hover { color: #b392f0; }
         `}</style>
 
         <div className="admin-login-page">
           <div className="admin-login-card">
             <div className="admin-login-logo">
-              <div className="admin-login-logo-icon">🌿</div>
-              <div className="admin-login-brand">Serenova Spa</div>
+              <div className="admin-login-logo-icon">✨</div>
+              <div className="admin-login-brand">Sapphire Beauty Planet</div>
               <div className="admin-login-subbrand">Admin Portal</div>
             </div>
             <h2 className="admin-login-title">Welcome Back</h2>
@@ -260,16 +265,16 @@ const AdminPage = ({ bookings, onBack }) => {
       <style>{`
         .admin-dashboard {
           min-height: 100vh;
-          background: #f0f4f0;
+          background: #f8f7ff;
           font-family: 'Inter', sans-serif;
         }
         .admin-topbar {
-          background: var(--green-dark);
+          background: #1a1a2e;
           padding: 16px 32px;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+          box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
         .admin-topbar-brand {
           display: flex;
@@ -282,7 +287,7 @@ const AdminPage = ({ bookings, onBack }) => {
         }
         .admin-topbar-icon {
           width: 36px; height: 36px;
-          background: rgba(255,255,255,0.15);
+          background: linear-gradient(135deg, #7b2cbf, #3f37c9);
           border-radius: 8px;
           display: flex; align-items: center; justify-content: center;
           font-size: 18px;
@@ -302,7 +307,7 @@ const AdminPage = ({ bookings, onBack }) => {
           font-weight: 600;
         }
         .admin-logout-btn {
-          background: rgba(255,255,255,0.1);
+          background: rgba(255,255,255,0.05);
           border: 1px solid rgba(255,255,255,0.2);
           color: #fff;
           padding: 8px 16px;
@@ -312,7 +317,7 @@ const AdminPage = ({ bookings, onBack }) => {
           cursor: pointer;
           transition: all 0.2s;
         }
-        .admin-logout-btn:hover { background: rgba(255,255,255,0.2); }
+        .admin-logout-btn:hover { background: #7b2cbf; border-color: #7b2cbf; }
 
         .admin-content {
           max-width: 1280px;
@@ -322,12 +327,12 @@ const AdminPage = ({ bookings, onBack }) => {
         .admin-page-title {
           font-family: 'Playfair Display', serif;
           font-size: 28px;
-          color: var(--green-dark);
+          color: #1a1a2e;
           margin-bottom: 6px;
         }
         .admin-page-sub {
           font-size: 14px;
-          color: var(--text-light);
+          color: #666;
           margin-bottom: 32px;
         }
 
@@ -341,11 +346,15 @@ const AdminPage = ({ bookings, onBack }) => {
           background: #fff;
           border-radius: 16px;
           padding: 22px 24px;
-          box-shadow: 0 2px 12px rgba(26,74,46,0.06);
+          box-shadow: 0 4px 15px rgba(26,26,46,0.05);
           display: flex;
           align-items: center;
           gap: 16px;
+          border-bottom: 3px solid transparent;
+          transition: transform 0.3s;
         }
+        .admin-stat-card:hover { transform: translateY(-4px); border-bottom-color: #7b2cbf; }
+        
         .admin-stat-icon {
           width: 48px; height: 48px;
           border-radius: 12px;
@@ -357,24 +366,24 @@ const AdminPage = ({ bookings, onBack }) => {
           font-family: 'Playfair Display', serif;
           font-size: 26px;
           font-weight: 700;
-          color: var(--text-dark);
+          color: #1a1a2e;
           line-height: 1;
           margin-bottom: 2px;
         }
         .admin-stat-label {
           font-size: 12px;
-          color: var(--text-light);
+          color: #777;
         }
 
         .admin-table-card {
           background: #fff;
           border-radius: 20px;
-          box-shadow: 0 2px 20px rgba(26,74,46,0.07);
+          box-shadow: 0 10px 30px rgba(26,26,46,0.08);
           overflow: hidden;
         }
         .admin-table-header {
           padding: 20px 24px;
-          border-bottom: 1px solid var(--green-pale);
+          border-bottom: 1px solid #eee;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -384,91 +393,67 @@ const AdminPage = ({ bookings, onBack }) => {
         .admin-table-title {
           font-family: 'Playfair Display', serif;
           font-size: 20px;
-          color: var(--text-dark);
+          color: #1a1a2e;
           font-weight: 600;
         }
-        .admin-table-controls {
-          display: flex;
-          gap: 12px;
-          flex-wrap: wrap;
-        }
         .admin-search {
-          border: 1.5px solid var(--green-pale);
+          border: 1.5px solid #e0e0e0;
           border-radius: 8px;
           padding: 9px 14px;
           font-size: 13px;
           font-family: 'Inter', sans-serif;
           outline: none;
-          color: var(--text-dark);
-          transition: border-color 0.2s;
-          width: 200px;
+          color: #333;
+          transition: all 0.2s;
+          width: 240px;
         }
-        .admin-search:focus { border-color: var(--green-accent); }
+        .admin-search:focus { border-color: #7b2cbf; box-shadow: 0 0 0 3px rgba(123, 44, 191, 0.1); }
+        
         .admin-filter-select {
-          border: 1.5px solid var(--green-pale);
+          border: 1.5px solid #e0e0e0;
           border-radius: 8px;
           padding: 9px 14px;
           font-size: 13px;
-          font-family: 'Inter', sans-serif;
           outline: none;
-          color: var(--text-dark);
           cursor: pointer;
           background: #fff;
         }
 
-        .admin-table-wrap {
-          overflow-x: auto;
-        }
         .admin-table {
           width: 100%;
           border-collapse: collapse;
           font-size: 13.5px;
         }
-        .admin-table thead tr {
-          background: var(--off-white);
-        }
         .admin-table th {
-          padding: 12px 18px;
+          padding: 15px 20px;
           text-align: left;
           font-size: 11px;
           font-weight: 700;
-          color: var(--text-light);
-          letter-spacing: 0.5px;
+          color: #888;
           text-transform: uppercase;
-          border-bottom: 1px solid var(--green-pale);
+          background: #fafafa;
+          border-bottom: 1px solid #eee;
         }
         .admin-table td {
-          padding: 14px 18px;
-          color: var(--text-mid);
-          border-bottom: 1px solid #f0f5f0;
-          vertical-align: middle;
+          padding: 16px 20px;
+          color: #444;
+          border-bottom: 1px solid #f5f5f5;
         }
-        .admin-table tr:hover td { background: #f8faf8; }
-        .admin-table tr:last-child td { border-bottom: none; }
         .booking-service-badge {
-          background: var(--green-pale);
-          color: var(--green-accent);
+          background: #f0e6ff;
+          color: #7b2cbf;
           font-size: 11px;
-          font-weight: 600;
-          padding: 4px 10px;
+          font-weight: 700;
+          padding: 4px 12px;
           border-radius: 20px;
-          white-space: nowrap;
         }
-        .admin-empty-state {
-          text-align: center;
-          padding: 60px 24px;
-          color: var(--text-light);
-        }
-        .admin-empty-state .empty-icon { font-size: 48px; margin-bottom: 12px; }
-        .admin-empty-state p { font-size: 15px; }
-
         .admin-back-btn {
           display: inline-flex;
           align-items: center;
           gap: 8px;
           background: none;
-          border: 1.5px solid var(--green-light);
-          color: var(--green-dark);
+          border: 1.5px solid #7b2cbf;
+          color: #7b2cbf;
           padding: 8px 18px;
           border-radius: 20px;
           font-size: 13px;
@@ -477,24 +462,16 @@ const AdminPage = ({ bookings, onBack }) => {
           transition: all 0.2s;
         }
         .admin-back-btn:hover {
-          background: var(--green-pale);
-        }
-
-        @media (max-width: 900px) {
-          .admin-stats-row { grid-template-columns: repeat(2, 1fr); }
-          .admin-topbar { padding: 14px 16px; }
-          .admin-content { padding: 20px 14px; }
-        }
-        @media (max-width: 500px) {
-          .admin-stats-row { grid-template-columns: 1fr 1fr; }
+          background: #7b2cbf;
+          color: #fff;
         }
       `}</style>
 
       <div className="admin-dashboard">
         <div className="admin-topbar">
           <div className="admin-topbar-brand">
-            <div className="admin-topbar-icon">🌿</div>
-            Serenova Spa — Admin
+            <div className="admin-topbar-icon">🪷</div>
+            Sapphire Beauty Planet — Admin
           </div>
           <div className="admin-topbar-right">
             <div className="admin-user-badge">👤 {ADMIN_USER}</div>
@@ -513,14 +490,14 @@ const AdminPage = ({ bookings, onBack }) => {
 
           <div className="admin-stats-row">
             <div className="admin-stat-card">
-              <div className="admin-stat-icon" style={{ background: '#d8f3dc' }}>📋</div>
+              <div className="admin-stat-icon" style={{ background: '#e0e7ff' }}>📋</div>
               <div>
                 <div className="admin-stat-num">{bookings.length}</div>
                 <div className="admin-stat-label">Total Bookings</div>
               </div>
             </div>
             <div className="admin-stat-card">
-              <div className="admin-stat-icon" style={{ background: '#e8f4fd' }}>📅</div>
+              <div className="admin-stat-icon" style={{ background: '#ede7f6' }}>📅</div>
               <div>
                 <div className="admin-stat-num">
                   {bookings.filter(b => b.date === new Date().toISOString().split('T')[0]).length}
@@ -529,7 +506,7 @@ const AdminPage = ({ bookings, onBack }) => {
               </div>
             </div>
             <div className="admin-stat-card">
-              <div className="admin-stat-icon" style={{ background: '#fff3cd' }}>💆</div>
+              <div className="admin-stat-icon" style={{ background: '#f3e5f5' }}>✨</div>
               <div>
                 <div className="admin-stat-num">
                   {new Set(bookings.map(b => b.service.split(' – ')[0])).size || 0}
@@ -538,7 +515,7 @@ const AdminPage = ({ bookings, onBack }) => {
               </div>
             </div>
             <div className="admin-stat-card">
-              <div className="admin-stat-icon" style={{ background: '#f8d7da' }}>📞</div>
+              <div className="admin-stat-icon" style={{ background: '#e8eaf6' }}>👤</div>
               <div>
                 <div className="admin-stat-num">{new Set(bookings.map(b => b.phone)).size}</div>
                 <div className="admin-stat-label">Unique Clients</div>
@@ -569,9 +546,9 @@ const AdminPage = ({ bookings, onBack }) => {
 
             <div className="admin-table-wrap">
               {filtered.length === 0 ? (
-                <div className="admin-empty-state">
-                  <div className="empty-icon">🌿</div>
-                  <p>{bookings.length === 0 ? 'No bookings yet. They\'ll appear here when clients book sessions.' : 'No bookings match your search.'}</p>
+                <div style={{ textAlign: 'center', padding: '60px 24px', color: '#888' }}>
+                  <div style={{ fontSize: '48px', marginBottom: '12px' }}>✨</div>
+                  <p>{bookings.length === 0 ? 'No bookings yet.' : 'No bookings match your search.'}</p>
                 </div>
               ) : (
                 <table className="admin-table">
@@ -590,8 +567,8 @@ const AdminPage = ({ bookings, onBack }) => {
                   <tbody>
                     {filtered.map((b, i) => (
                       <tr key={i}>
-                        <td style={{ fontWeight: 600, color: 'var(--text-dark)' }}>{i + 1}</td>
-                        <td style={{ fontWeight: 600, color: 'var(--text-dark)' }}>{b.fullName}</td>
+                        <td style={{ fontWeight: 600 }}>{i + 1}</td>
+                        <td style={{ fontWeight: 600 }}>{b.fullName}</td>
                         <td>{b.phone}</td>
                         <td>
                           <span className="booking-service-badge">
@@ -603,7 +580,7 @@ const AdminPage = ({ bookings, onBack }) => {
                         <td style={{ maxWidth: '160px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                           {b.address}
                         </td>
-                        <td style={{ fontSize: '12px', color: 'var(--text-light)' }}>
+                        <td style={{ fontSize: '12px', color: '#999' }}>
                           {formatDate(b.timestamp)}
                         </td>
                       </tr>

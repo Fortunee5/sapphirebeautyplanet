@@ -15,7 +15,7 @@ const AboutSection = ({ onBookNow }) => {
       sub: 'Lekki, Lagos',
       addr: 'Plot 26B Oladimeji Alo Street, Off Freedom Way Lekki 1 ',
     },
-        {
+    {
       name: 'SAPPHIRE BEAUTY PLANET',
       sub: 'Victoria Island, Lagos',
       addr: '11B Taslim Elias Close , Victoria Island',
@@ -46,18 +46,18 @@ const AboutSection = ({ onBookNow }) => {
           height: 560px;
           object-fit: cover;
           border-radius: 20px;
-          box-shadow: 0 30px 80px rgba(26,74,46,0.18);
+          box-shadow: 0 30px 80px rgba(30, 18, 74, 0.18);
         }
         .about-img-badge {
           position: absolute;
           bottom: -20px;
           right: -20px;
-          background: var(--green-dark);
+          background: #1e124a;
           color: #fff;
           padding: 24px 28px;
           border-radius: 16px;
           text-align: center;
-          box-shadow: 0 10px 40px rgba(26,74,46,0.35);
+          box-shadow: 0 10px 40px rgba(30, 18, 74, 0.35);
         }
         .about-img-badge-num {
           font-family: 'Playfair Display', serif;
@@ -78,7 +78,7 @@ const AboutSection = ({ onBookNow }) => {
           left: -16px;
           width: 80px;
           height: 80px;
-          background: var(--green-pale);
+          background: #e8e4f8;
           border-radius: 50%;
           z-index: -1;
         }
@@ -92,7 +92,7 @@ const AboutSection = ({ onBookNow }) => {
           font-weight: 600;
           letter-spacing: 2px;
           text-transform: uppercase;
-          color: var(--green-accent);
+          color: #4b2dab;
           margin-bottom: 16px;
         }
         .section-tag::before {
@@ -100,7 +100,7 @@ const AboutSection = ({ onBookNow }) => {
           display: block;
           width: 24px;
           height: 2px;
-          background: var(--green-accent);
+          background: #4b2dab;
           border-radius: 2px;
         }
         .section-title {
@@ -113,7 +113,7 @@ const AboutSection = ({ onBookNow }) => {
         }
         .section-title em {
           font-style: italic;
-          color: var(--green-accent);
+          color: #4b2dab;
         }
         .about-desc {
           font-size: 16px;
@@ -130,7 +130,7 @@ const AboutSection = ({ onBookNow }) => {
         }
         .location-card {
           background: #fff;
-          border: 1px solid var(--green-pale);
+          border: 1px solid #e8e4f8;
           border-radius: 12px;
           padding: 18px 20px;
           display: flex;
@@ -139,14 +139,14 @@ const AboutSection = ({ onBookNow }) => {
           transition: all 0.3s ease;
         }
         .location-card:hover {
-          border-color: var(--green-light);
-          box-shadow: 0 4px 20px rgba(26,74,46,0.08);
+          border-color: #9b84d8;
+          box-shadow: 0 4px 20px rgba(30, 18, 74, 0.08);
           transform: translateX(4px);
         }
         .location-icon {
           width: 44px;
           height: 44px;
-          background: var(--green-pale);
+          background: #e8e4f8;
           border-radius: 10px;
           display: flex;
           align-items: center;
@@ -158,7 +158,7 @@ const AboutSection = ({ onBookNow }) => {
         .location-name {
           font-size: 13px;
           font-weight: 700;
-          color: var(--green-dark);
+          color: #1e124a;
           letter-spacing: 0.5px;
           margin-bottom: 2px;
         }
@@ -176,7 +176,7 @@ const AboutSection = ({ onBookNow }) => {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          background: var(--green-dark);
+          background: #1e124a;
           color: #fff;
           padding: 16px 36px;
           border-radius: 40px;
@@ -185,12 +185,12 @@ const AboutSection = ({ onBookNow }) => {
           border: none;
           cursor: pointer;
           transition: all 0.3s ease;
-          box-shadow: 0 8px 25px rgba(26,74,46,0.25);
+          box-shadow: 0 8px 25px rgba(30, 18, 74, 0.25);
         }
         .about-book-btn:hover {
-          background: var(--green-accent);
+          background: #4b2dab;
           transform: translateY(-2px);
-          box-shadow: 0 12px 35px rgba(26,74,46,0.35);
+          box-shadow: 0 12px 35px rgba(30, 18, 74, 0.35);
         }
 
         @media (max-width: 900px) {
@@ -212,7 +212,7 @@ const AboutSection = ({ onBookNow }) => {
             <div className="about-img-accent" />
             <img className="about-img-main" src="/images/abbout.jpg" alt="Serenova Spa interior" />
             <div className="about-img-badge">
-              <div className="about-img-badge-num">8+</div>
+              <div className="about-img-badge-num">6+</div>
               <div className="about-img-badge-text">Years of<br/>Excellence</div>
             </div>
           </div>

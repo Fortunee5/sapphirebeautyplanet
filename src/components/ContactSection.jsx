@@ -3,7 +3,7 @@ const ContactSection = ({ onBookNow }) => {
     <>
       <style>{`
         .contact-section {
-          background: var(--green-dark);
+          background: #1e124a;
           padding: 100px 0;
           position: relative;
           overflow: hidden;
@@ -13,7 +13,7 @@ const ContactSection = ({ onBookNow }) => {
           position: absolute;
           bottom: 0; right: 0;
           width: 350px; height: 350px;
-          background: radial-gradient(circle, rgba(82,183,136,0.12) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(75, 45, 171, 0.18) 0%, transparent 70%);
           pointer-events: none;
         }
         .contact-inner {
@@ -87,8 +87,8 @@ const ContactSection = ({ onBookNow }) => {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          background: var(--green-light);
-          color: var(--green-dark);
+          background: #9b84d8;
+          color: #1e124a;
           padding: 14px 30px;
           border-radius: 40px;
           font-size: 14px;
@@ -96,7 +96,7 @@ const ContactSection = ({ onBookNow }) => {
           border: none;
           cursor: pointer;
           transition: all 0.3s;
-          box-shadow: 0 6px 20px rgba(82,183,136,0.3);
+          box-shadow: 0 6px 20px rgba(75, 45, 171, 0.3);
         }
         .contact-book-btn:hover {
           background: #fff;
@@ -168,21 +168,21 @@ const ContactSection = ({ onBookNow }) => {
           outline: none;
           width: 100%;
         }
-        .form-group select option { background: var(--green-dark); color: #fff; }
+        .form-group select option { background: #1e124a; color: #fff; }
         .form-group input::placeholder,
         .form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
         .form-group input:focus,
         .form-group textarea:focus,
         .form-group select:focus {
-          border-color: var(--green-light);
+          border-color: #9b84d8;
           background: rgba(255,255,255,0.1);
         }
         .form-group textarea { min-height: 90px; resize: vertical; }
 
         .contact-submit-btn {
           width: 100%;
-          background: var(--green-light);
-          color: var(--green-dark);
+          background: #9b84d8;
+          color: #1e124a;
           padding: 16px;
           border-radius: 12px;
           font-size: 15px;
@@ -217,16 +217,16 @@ const ContactSection = ({ onBookNow }) => {
             </p>
 
             <div className="contact-info-list">
-<div className="contact-info-item">
-  <div className="contact-info-icon">📍</div>
-  <div className="contact-info-text">
-    <strong>Our Locations</strong>
-    No 17B Cooper Road Ikoyi,<br />
-    No 34 Jay Jay Oladimeji Close Off Freedom Way Lekki 1,<br />
-    Plot 26B Oladimeji Alo Street, Off Freedom Way Lekki 1,<br />
-    11B Taslim Elias Close Victoria Island,
-  </div>
-</div>
+              <div className="contact-info-item">
+                <div className="contact-info-icon">📍</div>
+                <div className="contact-info-text">
+                  <strong>Our Locations</strong>
+                  No 17B Cooper Road Ikoyi,<br />
+                  No 34 Jay Jay Oladimeji Close Off Freedom Way Lekki 1,<br />
+                  Plot 26B Oladimeji Alo Street, Off Freedom Way Lekki 1,<br />
+                  11B Taslim Elias Close Victoria Island,
+                </div>
+              </div>
               <div className="contact-info-item">
                 <div className="contact-info-icon">📞</div>
                 <div className="contact-info-text">

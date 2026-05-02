@@ -1,5 +1,6 @@
 import { FaInstagram, FaFacebook, FaWhatsapp, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+
 const Footer = ({ onAdminClick }) => {
   const links = {
     'Spa Services': ['Full Body Massage', 'Luxury Facials', 'Hot Stone Therapy', 'Manicure & Pedicure', 'Aromatherapy Bath', 'Body Scrub & Wrap'],
@@ -11,7 +12,7 @@ const Footer = ({ onAdminClick }) => {
     <>
       <style>{`
         .footer {
-          background: #0d2a1a;
+          background: #0d0820;
           padding: 80px 0 0;
           color: rgba(255,255,255,0.7);
         }
@@ -69,8 +70,8 @@ const Footer = ({ onAdminClick }) => {
           text-decoration: none;
         }
         .social-btn:hover {
-          background: var(--green-accent);
-          border-color: var(--green-accent);
+          background: #4b2dab;
+          border-color: #4b2dab;
           transform: translateY(-2px);
         }
 
@@ -92,7 +93,7 @@ const Footer = ({ onAdminClick }) => {
           transition: color 0.2s;
           cursor: pointer;
         }
-        .footer-col-links a:hover { color: var(--green-light); }
+        .footer-col-links a:hover { color: #9b84d8; }
 
         .footer-newsletter {
           background: rgba(255,255,255,0.04);
@@ -136,10 +137,10 @@ const Footer = ({ onAdminClick }) => {
           transition: border-color 0.3s;
         }
         .newsletter-form input::placeholder { color: rgba(255,255,255,0.25); }
-        .newsletter-form input:focus { border-color: var(--green-light); }
+        .newsletter-form input:focus { border-color: #9b84d8; }
         .newsletter-form button {
-          background: var(--green-light);
-          color: var(--green-dark);
+          background: #9b84d8;
+          color: #1e124a;
           padding: 12px 22px;
           border-radius: 10px;
           font-size: 13px;
@@ -226,10 +227,9 @@ const Footer = ({ onAdminClick }) => {
                 Lagos' premier luxury wellness destination. Where every treatment is a journey into serenity, every visit a step towards your most radiant self.
               </p>
               <div className="footer-socials">
-                <a href="https://www.instagram.com/sapphirebeautyplanet?igsh=bXBub3Z2NHprZnI5&utm_source=qr" title="Instagram"> <FaInstagram /></a>
-                <a href="https://wa.me/2348038794733"
-                title="WhatsApp" target="_blank"> <FaWhatsapp /></a>
-                <a href="https://www.tiktok.com/@sapphireplanet1?_r=1&_t=ZS-95xvboioj6w" title="TikTok">    <FaTiktok /></a>
+                <a className="social-btn" href="https://www.instagram.com/sapphirebeautyplanet?igsh=bXBub3Z2NHprZnI5&utm_source=qr" title="Instagram"><FaInstagram /></a>
+                <a className="social-btn" href="https://wa.me/2348038794733" title="WhatsApp" target="_blank"><FaWhatsapp /></a>
+                <a className="social-btn" href="https://www.tiktok.com/@sapphireplanet1?_r=1&_t=ZS-95xvboioj6w" title="TikTok"><FaTiktok /></a>
               </div>
             </div>
 

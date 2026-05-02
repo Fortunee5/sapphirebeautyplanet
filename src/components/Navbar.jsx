@@ -36,7 +36,7 @@ const Navbar = ({ onBookNow }) => {
         .navbar.scrolled {
           background: rgba(255,255,255,0.97);
           padding: 12px 0;
-          box-shadow: 0 2px 30px rgba(26,74,46,0.1);
+          box-shadow: 0 2px 30px rgba(30, 18, 74, 0.1);
           backdrop-filter: blur(10px);
         }
         .nav-inner {
@@ -81,7 +81,7 @@ const Navbar = ({ onBookNow }) => {
           font-family: 'Playfair Display', serif;
           font-size: clamp(13px, 2vw, 20px);
           font-weight: 700;
-          color: var(--green-dark);
+          color: #1e124a;
           letter-spacing: 0.4px;
           white-space: nowrap;
           transition: color 0.3s;
@@ -90,7 +90,7 @@ const Navbar = ({ onBookNow }) => {
           font-family: 'Playfair Display', serif;
           font-size: clamp(8px, 1vw, 11px);
           font-weight: 400;
-          color: var(--green-dark);
+          color: #1e124a;
           letter-spacing: 1.5px;
           text-transform: uppercase;
           opacity: 0.7;
@@ -128,18 +128,18 @@ const Navbar = ({ onBookNow }) => {
           left: 0;
           width: 0;
           height: 2px;
-          background: var(--green-accent);
+          background: #4b2dab;
           transition: width 0.3s ease;
         }
         .nav-links a:hover::after { width: 100%; }
-        .nav-links a:hover { color: var(--green-accent); }
+        .nav-links a:hover { color: #4b2dab; }
         .navbar:not(.scrolled) .nav-links a { color: rgba(255,255,255,0.9); }
         .navbar:not(.scrolled) .nav-links a:hover { color: #fff; }
         .navbar:not(.scrolled) .nav-links a::after { background: #fff; }
 
         /* ── Book Now button ── */
         .nav-book-btn {
-          background: var(--green-dark);
+          background: #1e124a;
           color: #fff !important;
           padding: 10px 24px;
           border-radius: 30px;
@@ -151,9 +151,9 @@ const Navbar = ({ onBookNow }) => {
           border: 2px solid transparent;
         }
         .nav-book-btn:hover {
-          background: var(--green-accent);
+          background: #4b2dab;
           transform: translateY(-1px);
-          box-shadow: 0 6px 20px rgba(26,74,46,0.3);
+          box-shadow: 0 6px 20px rgba(30, 18, 74, 0.3);
         }
         .navbar:not(.scrolled) .nav-book-btn {
           background: rgba(255,255,255,0.2);
@@ -177,7 +177,7 @@ const Navbar = ({ onBookNow }) => {
           display: block;
           width: 24px;
           height: 2px;
-          background: var(--green-dark);
+          background: #1e124a;
           border-radius: 2px;
           transition: all 0.3s;
         }
@@ -194,7 +194,7 @@ const Navbar = ({ onBookNow }) => {
           left: 0;
           right: 0;
           bottom: 0;
-          background: rgba(26,74,46,0.98);
+          background: rgba(30, 18, 74, 0.98);
           z-index: 999;
           flex-direction: column;
           align-items: center;
